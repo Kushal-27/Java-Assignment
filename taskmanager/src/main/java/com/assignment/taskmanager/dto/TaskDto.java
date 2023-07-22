@@ -1,7 +1,7 @@
 package com.assignment.taskmanager.dto;
 
 import com.assignment.taskmanager.entity.UserEntity;
-import jakarta.persistence.*;
+
 
 import java.time.LocalDateTime;
 

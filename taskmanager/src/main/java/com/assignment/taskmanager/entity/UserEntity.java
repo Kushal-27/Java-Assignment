@@ -1,9 +1,10 @@
 package com.assignment.taskmanager.entity;
 
-import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "USER_TABLE")
@@ -20,6 +21,7 @@ public class UserEntity {
     private String userEmail;
     @Column(nullable = false, unique = true)
     private String phone;
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = false)
     private String password;
+    private String role;
 }
